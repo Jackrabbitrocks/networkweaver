@@ -1,0 +1,809 @@
+/*
+ Theme Name:   networkweaver
+ Theme URI:    https://www.networkweaver.com/
+ Description:  Networkweaver child theme, based on Accesspress Parallax Pro theme
+ Author:       Jackrabbit
+ Author URI:   https://jackrabbitrocks.com
+ Template:     accesspress_parallax_pro
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  networkweaver
+*/
+/* UTILITY CLASSES */
+.text-center{
+	text-align: center;
+}
+
+html h3{
+	text-transform: inherit;
+}
+
+header{
+	background-color: #fff;
+}
+
+.main-navigation{
+	margin-top: 10px;
+}
+
+.logo-side .menu-fix #site-logo{
+    margin-top: 10px;
+}
+
+/* color front page section headers */
+.parallax-section p, #content .parallax-section .section-wrap h2 {
+	color: #fff;
+}
+
+.parallax-section p.fp-resources-copy{
+    padding: 0 50px;
+}
+
+/* UPDATE THIS IF TEAM SECTION IS MOVED */
+.parallax-section:nth-child(7) p, #content .parallax-section:nth-child(5) .section-wrap h2, #content .parallax-section:nth-child(7) .section-wrap h2{
+	color: #000;
+}
+
+/* My hack for adding a section divider */
+section:nth-child(even).parallax-section .section-wrap, section:nth-child(7).parallax-section .section-wrap, #section-1850 .section-wrap{
+    padding: 0;
+}
+
+#section-1850 .section-wrap{
+	padding: 0 0 50px 0;
+}
+
+/* My hack for adding a section divider */
+.blank-section{
+	min-height: 0;
+	border: #ffcc01 2px solid;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.parallax-section:first-child .mid-content{
+	/* Hopefully we'll reimplement this once they see what it looks like. */
+	/* background-color: rgba(255,255,255,.7); */
+    padding: 15px 100px;
+}
+
+.single-post .entry-thumb img { display:none;
+}
+
+#content section:first-child {
+    margin-top: -42px;
+    padding-top:42px;
+}
+
+#content section {
+    margin-top:50px;
+}
+
+/* shrink down the readmore button */
+.blog-list .blog-excerpt span{
+    padding: 2px 4px;
+}
+
+.blog-list, .woocommerce.columns-3 ul.products li.product{
+	margin-right: 8%;
+}
+
+/* THIS IS SO WE HAVE GOOD LOOKING 3 COLUMN LAYOUT FOR THE PRODUCTS */
+.woocommerce.columns-3 ul.products li.product:nth-child(3){
+	margin-right: 0; 
+}
+
+/* Team section */
+.team-big-image img{
+	border: #ccc thick solid;
+}
+
+.team-listing .team-tab{
+    margin-right:40px;
+}
+
+/* SERVICES SECTION */
+#section-1764 .section-wrap{
+	padding: 0;
+}
+
+.top-footer .textwidget{
+	font-size: 65px;
+	text-align: right;
+}
+
+.category-blog #primary, .single-post #primary, .group-blog #primary{
+	width: 768px;
+	margin: 0 auto;
+	float: none;
+}
+
+.main-navigation ul li.main-menu-donate a {
+	padding: 5px 20px;
+	background-color: #5C3171;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.main-navigation > ul > li.main-menu-donate {
+	padding-top: 10px;
+}
+
+.main-navigation > ul > li.main-menu-donate a:hover {
+    color: #aaa;
+}
+
+nav.main-navigation ul li a{
+    color: #5b336f;
+}
+
+#pl-1850 a{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#pl-1850 a:hover{
+	color: #333;
+	text-decoration: underline;
+}
+
+nav form input[type] {
+    width: 100px;
+    margin-top: -7px;
+}
+
+section td {
+    width:30%;
+    text-align:center;
+    vertical-align:middle;
+    border:none;
+}
+
+section td a{
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section td input[type="image"] {
+    width: 120px;
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.blog-image img {
+    object-fit:cover;
+}
+
+section li.product.type-product {
+    height:300px;
+    overflow:hidden;
+}
+
+/* USE OF SECTION TAG IS TO KEEP STYLES TO FRONT PAGE ONLY */
+section span.price {
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+}
+
+section .woocommerce-Price-amount.amount {
+    position: relative;
+    left: 50%;
+}
+
+section .woocommerce-Price-amount.amount, #content section.parallax-section h2.woocommerce-loop-product__title{
+	background-color: rgba(255,255,255,.7);
+    padding: 10px;
+}
+
+
+#content section.parallax-section h2.woocommerce-loop-product__title {
+    vertical-align: top;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.woocommerce ul.products li.product a.added_to_cart{
+    left: 0;
+    background-color: #5b336f;
+    border-color: #5b336f;
+    z-index: 99;
+}
+
+.woocommerce ul.products li.product a.added_to_cart:hover{
+    background-color: rgba(91, 51, 111, 0.75);
+    color: white;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-weight: 500;
+    background: #5b336f;
+    color: #fff;
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+    background-color: rgba(91, 51, 111, 0.75);
+    color: white;
+}
+
+html .main-navigation ul ul li.current_page_item > a,html .main-navigation ul ul li.current-menu-item > a,html .main-navigation ul ul li > a:hover,html .ap-icon-text.style3 .ap-icon-text-icon i,html .ap-icon-text.style4 .ap-icon-text-icon i,html .bttn:after,html #go-top,html .blog-list .blog-excerpt span,html .ap-bttn:before,html .ap-bttn:after,html .ap-bttn,html .member-social-group a:hover,html .ap-progress-bar .ap-progress-bar-percentage,html .googlemap-contact-wrap li .fa,html .post-listing .posted-on,html .horizontal .ap_tab_group .tab-title.active,html .horizontal .ap_tab_group .tab-title.hover,html .vertical .ap_tab_group .tab-title.active,html .vertical .ap_tab_group .tab-title.hover,html #portfolio-grid.style4 h4,html .mm-menu,html .menu-toggle span,html .menu-toggle span:after,html .menu-toggle span:before,html .ap_toggle .ap_toggle_title,html .bttn:hover,html .bttn:active,html .portfolio-listing .button-group li.is-checked,html .bx-wrapper .bx-pager.bx-default-pager a:hover,html .bx-wrapper .bx-pager.bx-default-pager a.active,html .error-404,html button,html input[type="button"]:hover,html input[type="reset"]:hover,html input[type="submit"]:hover,html .bttn.ap-default-bttn.ap-bg-bttn,html .bttn.ap-default-bttn.ap-outline-bttn:hover,html .ap_tagline_box.ap-bg-box,html .ap-dropcaps.ap-square,html #collapse-nav,html .woocommerce ul.products li.product .onsale,html .woocommerce span.onsale,html .woocommerce ul.products li.product .button,html .woocommerce nav.woocommerce-pagination ul li span,html .woocommerce #respond input#submit.alt,html .woocommerce a.button.alt,html .woocommerce button.button.alt,html .woocommerce input.button.alt,html .woocommerce #respond input#submit:hover,html .woocommerce a.button:hover,html .woocommerce button.button:hover,html .woocommerce input.button:hover,html .woocommerce #respond input#submit.alt.disabled,html .woocommerce #respond input#submit.alt.disabled:hover,html .woocommerce #respond input#submit.alt:disabled,html .woocommerce #respond input#submit.alt:disabled:hover,html .woocommerce #respond input#submit.alt:disabled[disabled],html .woocommerce #respond input#submit.alt:disabled[disabled]:hover,html .woocommerce a.button.alt.disabled,html .woocommerce a.button.alt.disabled:hover,html .woocommerce a.button.alt:disabled,html .woocommerce a.button.alt:disabled:hover,html .woocommerce a.button.alt:disabled[disabled],html .woocommerce a.button.alt:disabled[disabled]:hover,html .woocommerce button.button.alt.disabled,html .woocommerce button.button.alt.disabled:hover,html .woocommerce button.button.alt:disabled,html .woocommerce button.button.alt:disabled:hover,html .woocommerce button.button.alt:disabled[disabled],html .woocommerce button.button.alt:disabled[disabled]:hover,html .woocommerce input.button.alt.disabled,html .woocommerce input.button.alt.disabled:hover,html .woocommerce input.button.alt:disabled,html .woocommerce input.button.alt:disabled:hover,html .woocommerce input.button.alt:disabled[disabled],html .woocommerce input.button.alt:disabled[disabled]:hover,html .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,html .woocommerce .widget_price_filter .ui-slider .ui-slider-range,html .woocommerce input.button,html nav.woocommerce-MyAccount-navigation ul li a,html .floating-bar ul li.current a,html .floating-bar ul li:hover a,html .floating-bar ul li .ap-tooltip,html .floating-bar ul li .ap-tooltip:before,html .floating-bar ul li .ap-tooltip:after,html .layout2.featured_table .ap-price-box,html .layout2 .ap-pricing-readmore a.bttn,html .blog_template_new .new-blog-listing .single-blog-wrapper .blog-content-wrapper .blog-date-wrap span.post-month,html .blog_template_new .new-blog-listing .single-blog-wrapper .blog-content-wrapper span.read-more a,html .googlemap_template_new .ap-contact-wrap .ap-ctn-form input[type="submit"],html .ap-pricing-table.layout3.featured_table .ap-price-box .ap-wrap,html .ap-pricing-table.layout3.featured_table,html .testimonial_template_new .testimonial-listing ul li.testimonial-content h3,html .testimonial_template_new .testimonial-stage .owl-controls .owl-dots .owl-dot.active,html .testimonial_template_new .testimonial-stage .owl-controls .owl-dots .owl-dot:hover {
+    background-color: #A25C82;
+}
+
+a, html .bttn, html .member-social-group a, html .ap-toggle-title .pointer span i, html .ap_toggle .ap_toggle_title:after, html .sidebar .widget-social-icons li a, html .team-tab .bx-wrapper .bx-controls-direction a, html #portfolio-grid.style2 .portfolio-link:hover, html .style1 .fancybox-gallery:hover, html .footer-social-icons a:hover, html .sidebar .menu li a:hover, html input[type="button"], html input[type="reset"], html input[type="submit"], html .sidebar ul li a:hover, html .sidebar ul li.current-menu-item > a, html .woocommerce .woocommerce-info:before, html .bttn.ap-default-bttn.ap-outline-bttn, html .layout2 .ap-pricing-readmore a.bttn:hover, html .blog_template_new .new-blog-listing .single-blog-wrapper .blog-content-wrapper span.read-more a:hover, html .woocommerce .star-rating:before, html .woocommerce .star-rating span:before, html .woocommerce .star-rating:before, html .woocommerce .star-rating span:before, html .mm-menu .mm-list > li:hover > a, html .mm-menu .mm-list > li:hover > a.mm-subopen:before, html .mm-menu .left-social-icons.mm-panel a:hover {
+    color: #A25C82;
+}
+
+.team_template_new .team-tab #team-arrow {
+    fill: #A25C82;
+}
+
+.bttn, html .team-image:hover, html .team-image.active, html .blog-list .blog-excerpt, html .ap-toggle-title, html .ap-toggle-title .pointer, html .ap_toggle, html .main-navigation ul ul li.current_page_item > a, html .main-navigation ul ul li.current-menu-item > a, html .main-navigation ul ul li > a:hover, html .menu-toggle, html .sidebar .widget-title:after, html button, html input[type="button"], html input[type="reset"], html input[type="submit"], html .bttn.ap-default-bttn.ap-outline-bttn, html .ap_tagline_box.ap-top-border-box, html .ap_tagline_box.ap-left-border-box, html .ap_tagline_box.ap-all-border-box, html input[type="text"]:focus, html input[type="email"]:focus, html input[type="url"]:focus, html input[type="password"]:focus, html input[type="search"]:focus, html input[type="number"]:focus, html input[type="tel"]:focus, html input[type="range"]:focus, html input[type="date"]:focus, html input[type="month"]:focus, html input[type="week"]:focus, html input[type="time"]:focus, html input[type="datetime"]:focus, html input[type="datetime-local"]:focus, html input[type="color"]:focus, html textarea:focus, html .woocommerce ul.products li.product h3, html .woocommerce .woocommerce-info, html .portfolio_masonry_template .portfolio-listing ul li.is-checked, html .portfolio_masonry_template .portfolio-listing ul li:hover, html .blog_template_new .new-blog-listing .single-blog-wrapper .blog-content-wrapper span.read-more a, html .googlemap_template_new .ap-contact-wrap .ap-ctn-form input[type="submit"], html .action_template .call-to-action a.ap-outline-bttn:hover, html .ap-pricing-table.layout3.featured_table .ap-price-box {
+    border-color: #A25C82;
+}
+
+html .bttn.ap-default-bttn.ap-bg-bttn:hover, html
+.woocommerce ul.products li.product .button:hover, html
+.woocommerce #respond input#submit.alt:hover, html 
+.woocommerce a.button.alt:hover, html 
+.woocommerce button.button.alt:hover, html 
+.woocommerce input.button.alt:hover, html
+.woocommerce button.button:disabled[disabled]:hover, html .woocommerce input.button.disabled:hover, html 
+.woocommerce input.button:disabled:hover, html .woocommerce input.button:disabled[disabled]:hover, html
+nav.woocommerce-MyAccount-navigation ul li:hover a, html
+nav.woocommerce-MyAccount-navigation ul li.is-active a, html
+.ap-pricing-table.layout3.featured_table a.bttn:before, html
+.ap-pricing-table.layout3.featured_table a.bttn:hover{
+background:#A25C82;
+}
+
+
+/* SERVICE TEXT WIDGETS */
+.ap-icon-text-content {
+    text-align: left;
+}
+
+/* STYLE IFRAME ON FRONT PAGE */
+.panel-row-style-for-1764-0 iframe {
+    width:100%;
+}
+
+.panel-row-style-for-1764-0 .custom-html-widget{
+    padding:0 20px;
+}
+
+/* MAKE BLOG SKINNY */
+.group-blog #primary{
+	width: 650px;
+}
+
+a,
+.bttn,
+.member-social-group a,
+.ap-toggle-title .pointer span i,
+.ap_toggle .ap_toggle_title:after,
+.sidebar .widget-social-icons li a,
+.team-tab .bx-wrapper .bx-controls-direction a,
+#portfolio-grid.style2 .portfolio-link:hover,
+.style1 .fancybox-gallery:hover,
+.footer-social-icons a:hover,
+.sidebar .menu li a:hover,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.sidebar ul li a:hover,
+.sidebar ul li.current-menu-item > a,
+.woocommerce .woocommerce-info:before,
+.bttn.ap-default-bttn.ap-outline-bttn,
+.layout2 .ap-pricing-readmore a.bttn:hover,
+.blog_template_new .new-blog-listing .single-blog-wrapper .blog-content-wrapper span.read-more a:hover,
+.woocommerce .star-rating:before, .woocommerce .star-rating span:before,
+.woocommerce .star-rating:before, .woocommerce .star-rating span:before,
+.mm-menu .mm-list > li:hover > a,
+.mm-menu .mm-list > li:hover > a.mm-subopen:before,
+.mm-menu .left-social-icons.mm-panel a:hover{
+color:#5A356E;
+}
+
+.group-blog .entry-content .order-again a {
+   color: #fff;
+}
+
+.edit-link a, .social-icons a{
+	color: #ffcc01 !important;
+}
+
+.parallax-content h1, .panel-row-style-for-1764-0 .textwidget {
+	text-align: center;
+}
+
+.parallax-content h1 a, .panel-row-style-for-1764-0 .textwidget a{
+	text-decoration: none;
+	color: #000;
+}
+
+/* ADD THE UNDERLINE TO THE HEADER TEXT */
+.parallax-content h1 a:after{
+	content:"";
+	display:table;
+	border-bottom: black thin solid;
+	width: 70px;
+	margin: 10px auto 0;
+}
+.post-navigation .nav-links a{
+    color:#ffcc01 ;
+}
+
+a.ap-archive-btn, a.url.fn.n {
+    color:#5C3171 ;
+}
+
+.group-blog header .wp-post-image{
+    width: 100%;
+}
+
+#header-wrap div.entry-header-inner{
+    padding: 50px 0 0;
+}
+
+.single-post #header-wrap div.entry-header-inner{
+    height: calc(100vh - 96px);
+    background-size: cover;
+    padding: 50px 0 30px;
+}
+
+.single-post #header-wrap div.entry-header-inner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+80,1+98 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 60%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 60%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.single-post #header-wrap div.title-breadcrumb-wrap{
+    vertical-align: bottom;
+    position: relative;
+}
+
+.single-post h1.entry-title{
+    font-size: 60px;
+}
+
+.single-post #header-wrap .entry-title{
+    margin: 0 auto;
+}
+
+.entry-header-byline{
+    position: relative;
+    text-align: center;
+}
+
+.group-blog .entry-content a {
+   color: #5a336f;
+}
+
+.blog-list .blog-image img{
+    -webkit-filter: none;
+    filter: none;
+    filter: none;
+}
+
+a.blog-list.wow.fadeInDown {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.blog-excerpt {
+    flex-basis: 66%;
+}
+
+.team_template_new .mid-content > .parallax-title {
+    display: none;
+}
+
+.team-detail a{
+    color: #A25C82;
+}
+
+.team_template_new .bx-controls-direction a.bx-next, .team_template_new .bx-controls-direction a.bx-prev {
+    background-color: #A25C82;
+}
+
+/* MAKE THE BUTTONS AT THE BOTTOM OF THE FRONT PAGE LOOK BETTER */
+#section-1894 td a{
+    padding: 10px 20px;
+    border: #a25b81 3px solid;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+#section-1894 td input{
+    border: #a25b81 3px solid;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+#section-1894 td input:hover, #section-1894 td a:hover{
+    -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 10px 1px rgba(0,0,0,.3);
+}
+
+/* STYLE THE MC SIGNUP FORM */
+form#mc4wp-form-1 p{
+    display: flex;
+    justify-content:space-around;
+}
+form#mc4wp-form-1 input{
+    flex-grow:2;
+    flex-basis:66%
+}
+
+form#mc4wp-form-1 label{
+    flex-grow:1;
+    flex-basis:30%
+}
+
+form#mc4wp-form-1 input[type="submit"]{
+    max-width:25%;
+}
+
+.taxonomy-description{
+    width: 650px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* REMOVE THE DATE AND AUTHOR ON THE TEAM ARCHIVE PAGE */
+.category-team .posted-on, .category-team .posted-by{
+    display: none;
+}
+
+.category-team .taxonomy-description{
+    text-align: left;
+}
+
+.category-team .entry-thumb img{
+    object-fit: contain;
+    max-height: 300px;
+}
+
+.category-team #main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap:20px 10px;
+}
+
+.category-team article{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between
+}
+
+.category-team section#primary {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 300px;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 20px 40px;
+}
+
+/* totally weak ass removal of infinite scroll on team page */
+body.category-team #infinite-handle{
+    display: none;
+}
+
+.post-listing .hentry{
+    margin-bottom:0;
+}
+
+.entry-header .entry-title.no-date{
+    text-align:center;
+}
+
+.entry-thumb.cat-team{
+    background-color:transparent;
+    margin-top:15px;
+}
+
+article.service-item {
+    border: gray thin dotted;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+article.service-item i{
+    font-size: 30px;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: white;
+    background-color: #5b336f;
+}
+
+article.service-item h5{
+    text-align: left;
+}
+
+/* SET FEATURED IMAGE SPECIAL FOR THE CONSULTANT'S SINGLES */
+.single-post .cat-team #header-wrap div.entry-header-inner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cat-team .entry-header-byline{
+    display:none;
+}
+
+.team_template_new div.team-big-image div{
+    box-shadow: 0 0 0 40px rgba(255,204,1, 0.2),
+    0 0 0 80px rgba(255,204,1, 0.2);
+    -webkit-box-shadow: 0 0 0 40px rgba(255,204,1, 0.2),
+    0 0 0 80px rgba(255,204,1, 0.2);
+    -ms-box-shadow: 0 0 0 40px rgba(255,204,1, .2),
+    0 0 0 80px rgba(255,204,1, 0.2);
+}
+
+.entry-thumb.cat-team{
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service-icon {
+    width: 100px;
+    background-color: #5b336f;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    height: 100px;
+}
+
+#section-2444 .real-title{
+    color:#fff;
+}
+
+#section-2444 .parallax-content h1 a:after {
+    border-bottom: #fff thin solid;
+}
+
+.author{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.main-navigation>ul>li.nav-newsletter {
+    padding-top: 7px;
+}
+
+.nav-newsletter a{
+    background-color: #e6b801;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+#customer_details .mailchimp-newsletter {
+    padding: 5px;
+    background-color: #a35b82;
+    color: #fff;
+    border: medium #5c3170 solid;
+    border-radius: 5px;
+}
+
+.resource_container > a {
+    float: right;
+    margin-left: 15px;
+}
+
+.resource_left {
+    margin-bottom: 15px;
+}
+
+.resource_container.clearfix {
+    margin-bottom: 15px;
+}
+
+section .woocommerce{
+    padding-left: 10%;
+}
+
+.home.infinite-scroll.neverending .site-footer{
+    display: block;
+}
+
+.top-footer .mid-content.clearfix {
+    display: flex;
+    align-items: center;
+}
+
+.woocommerce-thankyou-order-received ~ form input {
+    max-width: 100px;
+}
+
+.search-form input{
+    border-radius: 5px;
+}
+
+.single #header-wrap .entry-title{
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+html nav.woocommerce-MyAccount-navigation ul li:hover a, html nav.woocommerce-MyAccount-navigation ul li.is-active a, html nav.woocommerce-MyAccount-navigation ul li a{
+    background:transparent;
+}
+
+.group-blog .entry-content .woocommerce-orders-table  a{
+    color:#fff;
+}
+
+.woocommerce-breadcrumb{
+    display:none;
+}
+
+.page-description {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.resource_container > p{
+    float: right;
+    margin-left: 25px;
+}
+
+.resource_container {
+    text-align:left;
+}
+
+/* styling for product page */
+h2.wc-nested-category-layout-category-title {
+    background-color:#5b336f;
+    padding:5px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+h2.wc-nested-category-layout-category-title a, ul.subcategory-products + div a{
+    text-decoration:none;
+}
+
+ul.subcategory-products + div {
+    margin-top:-40px;
+    margin-bottom:50px;
+}
+
+ul.subcategory-products + div a{
+    padding:10px;
+    background-color:#e6b801;
+    color:#5b336f;
+    text-transform:lowercase;
+}
+
+@media (min-width: 768px){
+    .woocommerce-page.columns-3 ul.products li.product,.woocommerce.columns-3 ul.products li.product {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax-section p.fp-resources-copy{
+        padding: 0 10px;
+    }
+    .main-navigation ul ul.sub-menu {
+        background: #5b336f;
+    }
+    .woocommerce.columns-3 ul.products li.product{
+        width: 42%;
+    }
+
+    section .woocommerce{
+        padding-left:5%;
+    }
+
+    form#mc4wp-form-1 p{
+        flex-direction: column;
+    }
+    form#mc4wp-form-1 input[type="submit"]{
+        max-width:50%;
+    }
+
+    .taxonomy-description{
+        width: 100%;
+        padding: 10px;
+    }
+    .parallax-section:first-child .mid-content{
+        padding:15px 20px;
+    }
+    
+    #content .parallax-section:nth-child(5) .section-wrap h2,
+    #content .parallax-section:nth-child(7) .section-wrap h2{
+        font-size:1.75rem;
+    }
+
+    #pl-1894 tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pl-1894 td{
+        width: 95%;
+        padding: 30px;
+    }
+
+    .top-footer .textwidget {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 960px){
+    .blog-listing.mid-content.clearfix {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px){
+    div.woocommerce.columns-3 ul.products li.product {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #menu-top-navigation {
+        background-color: #5b336f;
+    }
+    nav form input[type] {
+        margin-top: 0;
+    }
+    #menu-top-navigation form{
+        padding:10px;
+    }
+}
+
+@media (max-width: 480px){
+    section .woocommerce{
+        padding-left:0;
+    }
+}
+
+@media(max-width:651px){
+    .page-description {
+        width:100%;
+        padding:0 20px
+    }
+}

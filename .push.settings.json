@@ -1,0 +1,20 @@
+
+{
+	"service": "SFTP",
+	"SFTP": {
+		"timeZoneOffset": 0,
+		"testCollisionTimeDiffs": true,
+		"collisionUploadAction": null,
+		"collisionDownloadAction": null,
+		"followSymlinks": false,
+		"host": "66.228.44.213",		
+		"username": "jackrabbit",
+		"privateKey": "/Users/jackrabbit/.ssh/id_rsa",
+		"keyPassphrase": "C0mp@3310n",
+		"root": "/var/www/networkweaver.com/public_html/wp-content/themes/networkweaver",
+		"keepaliveInterval": 3000,
+		"debug": false,
+		"fileMode": "",
+		"sshGateway": null
+	}
+}
