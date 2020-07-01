@@ -19,3 +19,9 @@ Added (Checkout Field Editor plugin)[https://wordpress.org/plugins/woo-checkout-
 ## [1.0.3] - 2019-10-2
 Fixed issue with checkout where even though we were unsetting the checkout fields we didn't want to ask for when purchasing free products, the required fields were still preventing the user from moving to the next step of the process. Not happy with the way I came to the solution, but the good news is that it does what it was supposed to.
 ref: https://jeroensormani.com/ultimate-guide-to-woocommerce-checkout-fields/ , https://stackoverflow.com/questions/50107409/make-checkout-addresses-fields-not-required-in-woocommerce
+
+## [1.0.4] - 2019-11-27
+Updated the code for the donate button.
+
+## [1.0.5] - 2020-07-01
+Fixed transparent search button

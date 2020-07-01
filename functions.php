@@ -12,13 +12,16 @@ add_action('wp_enqueue_scripts', 'nq_js');
 
 function add_last_nav_item($items) {
   return $items .= '<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XCLS5GYJX8MSW">
-<input type="image" src="https://www.networkweaver.com/wp-content/uploads/2018/04/donate-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="9PHHML3WZ6QQ2" />
+<input type="image" src="https://networkweaver.com/wp-content/uploads/2020/03/donate-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form></li>';
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
+
+
+
 
 /**
 * @snippet Display "FREE" if WooCommerce Product Price is Zero or Empty - WooCommerce
@@ -195,3 +198,19 @@ function js_remove_checkout_fields( $fields ) {
     return $fields;
 }
 add_filter( 'woocommerce_checkout_fields', 'js_remove_checkout_fields' );
+
+/* Add GA tracking to the <head> */
+add_action('wp_head', 'add_GA_code');
+function add_GA_code(){
+?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8TNF1QV2K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8TNF1QV2K9');
+</script>
+<?php
+};
