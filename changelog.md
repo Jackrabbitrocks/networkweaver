@@ -28,3 +28,6 @@ Fixed transparent search button
 
 ## [1.0.6] - 2020-11-19
 Updated donate button
+
+## [1.0.7] - 2020-11-20
+added header donate CTA via js

@@ -745,6 +745,21 @@ ul.subcategory-products + div a{
     padding-top:7px;
 }
 
+/* style the header banner for donations */
+.donate-header {
+    display:block;
+    text-align:center;
+    background-color:#E6B802;
+    color:#5B336F;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.donate-header h1{
+    margin:0;
+    padding:20px 0;
+    font-size:2vw;
+}
 
 @media (min-width: 768px){
     .woocommerce-page.columns-3 ul.products li.product,.woocommerce.columns-3 ul.products li.product {
