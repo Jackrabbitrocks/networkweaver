@@ -25,3 +25,6 @@ Updated the code for the donate button.
 
 ## [1.0.5] - 2020-07-01
 Fixed transparent search button
+
+## [1.0.6] - 2020-11-19
+Updated donate button

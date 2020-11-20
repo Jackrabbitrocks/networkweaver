@@ -9,6 +9,12 @@
  Tags:         
  Text Domain:  networkweaver
 */
+
+/* Set variables */
+:root{
+    --light-purple: #A25C82;
+}
+
 /* UTILITY CLASSES */
 .text-center{
 	text-align: center;
@@ -660,6 +666,19 @@ section .woocommerce{
     border-radius: 5px;
 }
 
+form.search-form {
+    background-color:rgba(255,255,255,.8);
+}
+
+.open form.search-form{
+    padding: 5px 10px;
+}
+
+html input.search-submit {
+    background-color: var(--light-purple);
+    color:white;
+}
+
 .single #header-wrap .entry-title{
     text-shadow: 1px 1px 0 #FFFFFF;
 }
@@ -713,6 +732,19 @@ ul.subcategory-products + div a{
     color:#5b336f;
     text-transform:lowercase;
 }
+
+.main-navigation .donate img {
+    height:37px;
+}
+
+.main-navigation .nav-newsletter{
+    padding-top:0
+}
+
+.main-navigation .donate{
+    padding-top:7px;
+}
+
 
 @media (min-width: 768px){
     .woocommerce-page.columns-3 ul.products li.product,.woocommerce.columns-3 ul.products li.product {

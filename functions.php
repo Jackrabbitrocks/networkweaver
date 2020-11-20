@@ -11,12 +11,9 @@ function nq_js(){
 add_action('wp_enqueue_scripts', 'nq_js');
 
 function add_last_nav_item($items) {
-  return $items .= '<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="hosted_button_id" value="9PHHML3WZ6QQ2" />
-<input type="image" src="https://networkweaver.com/wp-content/uploads/2020/03/donate-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form></li>';
+  return $items .= '<li class="donate"><a href="https://leadershiplearning.wedid.it/campaigns/8360">
+<img src="https://networkweaver.com/wp-content/uploads/2020/03/donate-button.png" border="0">
+</a></li>';
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
 
