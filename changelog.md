@@ -31,3 +31,6 @@ Updated donate button
 
 ## [1.0.7] - 2020-11-20
 added header donate CTA via js
+
+## [1.0.8] - 2022-04-24
+added header donate CTA via js
