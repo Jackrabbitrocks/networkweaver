@@ -11,5 +11,5 @@ jQuery(document).ready(function($){
     }
 
     // insert banner at top of page
-    	$('body').prepend('<a href="https://leadershiplearning.wedid.it/campaigns/8360" class="donate-header"><h1>Help Network Weaver stay online! - Donate to support the site.</h1></a>');
+    	// $('body').prepend('<a href="https://leadershiplearning.wedid.it/campaigns/8360" class="donate-header"><h1>Help Network Weaver stay online! - Donate to support the site.</h1></a>');
 });
