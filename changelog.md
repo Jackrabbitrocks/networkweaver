@@ -34,3 +34,6 @@ added header donate CTA via js
 
 ## [1.0.8] - 2022-04-24
 added header donate CTA via js
+
+## [1.0.9] - 2022-04-25
+updated the donation button link to https://network-weaver.raisely.com/
