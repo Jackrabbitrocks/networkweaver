@@ -11,8 +11,8 @@
  * the readme will list any important changes.
  *
  * @see https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce\Templates\Emails
- * @version 3.7.0
+ * @package WooCommerce/Templates/Emails
+ * @version 3.5.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -32,19 +32,20 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p><?php _e( 'Check out our newsletter <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter">HERE</a>.  Subscribe <a href="https://networkweaver.us16.list-manage.com/subscribe?u=246fc4c8c6d22cb445b3f0a7a&id=646e892a9c">via this link</a>.', 'woocommerce' ); ?></p>
 
 <table width="100%" style="width:100%;">
-    <tr>
-        <td align="center">
-            <table width="300" style="width: 300px;-webkit-box-shadow: 2px 2px 12px 6px rgba(0,0,0,.1);box-shadow: 2px 2px 12px 6px rgba(0,0,0,.1);">
-                <tr>
-                    <td> <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src="https://networkweaver.com/wp-content/uploads/2018/04/nw_logo-header.png" alt="" width="300" style="width:300px;"></a> </td>
-                </tr>
-                <tr>
-                    <td><a class='image' href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src='https://networkweaver.com/wp-content/uploads/2019/07/woo-email-image.jpg' style='width:300px;' width='300'></a></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
+	<tr>
+		<td align="center">
+			<table width="300" style="width: 300px;-webkit-box-shadow: 2px 2px 12px 6px rgba(0,0,0,.1);box-shadow: 2px 2px 12px 6px rgba(0,0,0,.1);">
+				<tr>
+					<td> <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src="https://networkweaver.com/wp-content/uploads/2018/04/nw_logo-header.png" alt="" width="300" style="width:300px;"></a> </td>
+				</tr>
+				<tr>
+					<td><a class='image' href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src='https://networkweaver.com/wp-content/uploads/2019/07/woo-email-image.jpg' style='width:300px;' width='300'></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
 </table>
+
 <?php
 
 /*
@@ -66,16 +67,9 @@ do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, 
  */
 do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
 
-/**
- * Show user-defined additional content - this is set in each email's settings.
- */
-if ( $additional_content ) {
-	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
-}
-
 ?>
 <p>
-    <?php _e('Best,<br> June Holley'); ?>
+	<?php _e('Best,<br> June Holley'); ?>
 </p>
 <p>
 <em>
