@@ -11,7 +11,7 @@ function nq_js(){
 add_action('wp_enqueue_scripts', 'nq_js');
 
 function add_last_nav_item($items) {
-  return $items .= '<li class="donate"><a href="https://network-weaver.raisely.com/">
+  return $items .= '<li class="donate"><a target="_blank" rel="noopener noreferrer" href="https://network-weaver.raisely.com/">
 <img src="https://networkweaver.com/wp-content/uploads/2020/03/donate-button.png" border="0">
 </a></li>';
 }
