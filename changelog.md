@@ -37,3 +37,6 @@ added header donate CTA via js
 
 ## [1.0.9] - 2022-04-25
 updated the donation button link to https://network-weaver.raisely.com/
+
+## [1.0.10] - 2022-05-21
+updated woo commerce email template
