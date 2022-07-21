@@ -90,6 +90,28 @@ section:nth-child(even).parallax-section .section-wrap, section:nth-child(7).par
     padding: 2px 4px;
 }
 
+/* woocommerce updates  */
+.woocommerce-order p.thankyou {
+    margin: 10pt auto;
+}
+
+.woocommerce-order p.thankyou + p{
+    margin: 0 auto 10pt;
+}
+
+p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+    display: flex;
+    justify-content: center;
+}
+
+.woocommerce img.thank-you-donation-logo {
+    max-width: 50%;
+}
+
+p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received + p {
+    font-weight: bold;
+}
+
 .blog-list, .woocommerce.columns-3 ul.products li.product{
 	margin-right: 8%;
 }
@@ -759,6 +781,16 @@ ul.subcategory-products + div a{
     margin:0;
     padding:20px 0;
     font-size:2vw;
+}
+
+
+/* Hack to hide the services section */
+section#section-1764 {
+    display: none;
+}
+
+section#section-535 + section {
+    display:none;
 }
 
 @media (min-width: 768px){

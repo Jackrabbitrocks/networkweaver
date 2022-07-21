@@ -40,3 +40,6 @@ updated the donation button link to https://network-weaver.raisely.com/
 
 ## [1.0.10] - 2022-05-21
 updated woo commerce email template
+
+## [1.0.11] - 2022-07-21
+updated woo commerce email template

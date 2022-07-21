@@ -46,13 +46,6 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 remove_filter( 'the_content', 'wpautop' );
 
-add_filter( 'woocommerce_thankyou_order_received_text', 'wpb_thankyou' );
-function wpb_thankyou() {
-	$added_text = 'Thank you. Your order has been received. <br>If you appreciate all the free and low-cost items on this site, consider a donation to help us continue developing these materials. All donations will go 100% to development of new items to add to the site. <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="XCLS5GYJX8MSW"><input type="image" src="https://www.networkweaver.com/wp-content/uploads/2018/04/donate-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" scale="0"></form>';
-	return $added_text ;
-}
-
 function admin_bar(){
   if(is_user_logged_in()){
     add_filter( 'show_admin_bar', '__return_true' , 1000 );
@@ -211,3 +204,25 @@ function add_GA_code(){
 </script>
 <?php
 };
+
+/* start Woo Commerce updating */
+
+/**
+ * @snippet       Change Thank You Page Title
+ * @author        Misha Rudrastyh
+ * @url           https://rudrastyh.com/woocommerce/thank-you-page.html#change_title
+ */
+add_filter( 'woocommerce_endpoint_order-received_title', 'misha_thank_you_title' );
+ 
+function misha_thank_you_title( $old_title ){
+
+  return 'THANK YOU FOR YOUR ORDER';
+
+}
+
+
+add_filter( 'woocommerce_thankyou_order_received_text', 'wpb_thankyou' );
+function wpb_thankyou() {
+  $added_text = '<img class="thank-you-donation-logo" src="https://i0.wp.com/networkweaver.com/wp-content/uploads/2022/05/show-your-appreciation.png?ssl=1" border="0"><p>Appreciate the free content and resources at Network Weaver? Please <a href="https://network-weaver.raisely.com/" target="_blank">consider making a donation</a> to help us continue developing these materials.</p><div id="raisely-donate" data-campaign-path="network-weaver" data-width="100%" data-height="800"><script src="https://cdn.raisely.com/v3/public/embed.js"></script></div><p class="thankyou">Thank you,</p><p>All contributions will be used in the effort to grow our on-site base of blogs, events, and resources for systems change, expand our outreach, to make Network Weaver more accessible, and fund the emerging Network Weaver BIPOC initiatives</p>';
+  return $added_text ;
+}

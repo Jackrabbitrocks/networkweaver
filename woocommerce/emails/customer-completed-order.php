@@ -28,23 +28,19 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
 <?php /* translators: %s: Site title */ ?>
 <p><?php esc_html_e( 'Thank you for downloading a Network Weaver resource.', 'woocommerce' ); ?></p>
-<p><?php _e( "If you haven't already done so, please sign up for our weekly newsletter for more tools, insights, inspirations and connections for your network. <strong>Every other issues offers a free resource!</strong>", 'woocommerce' ); ?></p>
-<p><?php _e( 'Check out our newsletter <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter">HERE</a>.  Subscribe <a href="https://networkweaver.us16.list-manage.com/subscribe?u=246fc4c8c6d22cb445b3f0a7a&id=646e892a9c">via this link</a>.', 'woocommerce' ); ?></p>
-
+<p><?php _e( "<a href='https://network-weaver.raisely.com/' style='color:#A25C82;'>Please consider donating</a> to help us continue to offer free content <strong class='#A25C82'>to all</strong> – in support of equity, justice and transformation <strong class='color:#A25C82;'>for all</strong>." ); ?></p>
 <table width="100%" style="width:100%;">
     <tr>
         <td align="center">
-            <table width="300" style="width: 300px;-webkit-box-shadow: 2px 2px 12px 6px rgba(0,0,0,.1);box-shadow: 2px 2px 12px 6px rgba(0,0,0,.1);">
-                <tr>
-                    <td> <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src="https://networkweaver.com/wp-content/uploads/2018/04/nw_logo-header.png" alt="" width="300" style="width:300px;"></a> </td>
-                </tr>
-                <tr>
-                    <td><a class='image' href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src='https://networkweaver.com/wp-content/uploads/2019/07/woo-email-image.jpg' style='width:300px;' width='300'></a></td>
-                </tr>
-            </table>
+            <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src="https://networkweaver.com/wp-content/uploads/2022/07/donate-new.png" alt="" width="274" style="width:274px;"></a>
         </td>
     </tr>
 </table>
+<p><?php _e( 'If you haven’t already done so, sign up for Network Weaver’s newsletter to receive fresh resources and opportunities in your inbox every week.
+', 'woocommerce' ); ?></p>
+<p><?php _e( 'Check out our newsletter <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter">HERE</a>.  Subscribe <a href="https://networkweaver.us16.list-manage.com/subscribe?u=246fc4c8c6d22cb445b3f0a7a&id=646e892a9c">via this link</a>.', 'woocommerce' ); ?></p>
+
+
 <?php
 
 /*
@@ -77,11 +73,7 @@ if ( $additional_content ) {
 <p>
     <?php _e('Best,<br> June Holley'); ?>
 </p>
-<p>
-<em>
-<?php _e( 'p.s. If you need assistance in your network building efforts, our site includes the resumes of <a href="https://networkweaver.com/category/team/">over 50 consultants</a> with experience in a wide range of network processes.', 'woocommerce' ); ?>
-</em>
-</p>
+
 <?php
 
 /*
