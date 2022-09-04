@@ -28,11 +28,11 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
 <?php /* translators: %s: Site title */ ?>
 <p><?php esc_html_e( 'Thank you for downloading a Network Weaver resource.', 'woocommerce' ); ?></p>
-<p><?php _e( "<a href='https://network-weaver.raisely.com/' style='color:#A25C82;'>Please consider donating</a> to help us continue to offer free content <strong class='#A25C82'>to all</strong> – in support of equity, justice and transformation <strong class='color:#A25C82;'>for all</strong>." ); ?></p>
+<p><?php _e( "<a href='https://network-weaver.raisely.com/' style='color:A25C82;'>Please consider donating</a> to help us continue to offer free content <strong class='A25C82'>to all</strong> – in support of equity, justice and transformation <strong class='color:#A25C82;'>for all</strong>." ); ?></p>
 <table width="100%" style="width:100%;">
     <tr>
         <td align="center">
-            <a href="https://mailchi.mp/07f564e9b842/network-weaver-newsletter"><img src="https://networkweaver.com/wp-content/uploads/2022/07/donate-new.png" alt="" width="274" style="width:274px;"></a>
+            <a href="https://network-weaver.raisely.com/"><img src="https://networkweaver.com/wp-content/uploads/2022/07/donate-new.png" alt="" width="274" style="width:274px;"></a>
         </td>
     </tr>
 </table>

@@ -886,3 +886,48 @@ section#section-535 + section {
         padding:0 20px
     }
 }
+
+/* updates to front page 
+These are mostly hacks that I'm doing because I can't work with the theme options because they're broken.
+*/
+
+html #section-18 .overlay {
+    background: none ;
+}
+
+html #section-18 {
+    background: none;
+}
+
+html #section-18 h2 {
+    text-transform: lowercase;
+}
+
+#section-535 {
+    background: url(https://networkweaver.com/wp-content/uploads/2022/09/Less-Crop-Top.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+html #content .parallax-section .section-wrap h2 {
+    color: black;
+}
+
+#content .parallax-section.blog_template .section-wrap h2 {
+    display: none;
+}
+
+#section-2444 {
+    background: url(https://networkweaver.com/wp-content/uploads/2022/09/Less-Crop-Bottom.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    color: #333333;
+}
+
+#section-2444 .parallax-title, #section-2444 .fp-resources-copy{
+    display:none;
+}
+
+#content section{
+    margin-top:10px;
+}
