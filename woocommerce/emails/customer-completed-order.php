@@ -70,9 +70,7 @@ if ( $additional_content ) {
 }
 
 ?>
-<p>
-    <?php _e('Best,<br> June Holley'); ?>
-</p>
+
 
 <?php
 

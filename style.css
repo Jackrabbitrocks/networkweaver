@@ -36,6 +36,9 @@ header{
     margin-top: 10px;
 }
 
+/* adding Raleway font as requested */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 /* color front page section headers */
 .parallax-section p, #content .parallax-section .section-wrap h2 {
 	color: #fff;
@@ -793,6 +796,62 @@ section#section-535 + section {
     display:none;
 }
 
+/* updates to front page 
+These are mostly hacks that I'm doing because I can't work with the theme options because they're broken.
+*/
+
+
+
+html #section-18 .overlay {
+    background: none ;
+}
+
+html #section-18 {
+    background: none;
+}
+
+html #section-18 h2 {
+    text-transform: lowercase;
+}
+
+html #section-535 {
+    background: url(https://networkweaver.com/wp-content/uploads/2022/09/top.png) no-repeat bottom fixed;
+}
+
+html #content #section-18.parallax-section .section-wrap h2 {
+    color:#2E474E;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 1.37;
+    letter-spacing: .2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#section-18 .mid-content{
+    width: auto;
+}
+
+#content .parallax-section.blog_template .section-wrap h2 {
+    display: none;
+}
+
+html #section-2444 {
+    background: url(https://networkweaver.com/wp-content/uploads/2022/09/bottom.png);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: bottom;
+    color: #333333;
+}
+
+#section-2444 .parallax-title, #section-2444 .fp-resources-copy{
+    display:none;
+}
+
+#content section{
+    margin-top:10px;
+}
+
+/* Media Queries start */
 @media (min-width: 768px){
     .woocommerce-page.columns-3 ul.products li.product,.woocommerce.columns-3 ul.products li.product {
         width: 25%;
@@ -887,47 +946,8 @@ section#section-535 + section {
     }
 }
 
-/* updates to front page 
-These are mostly hacks that I'm doing because I can't work with the theme options because they're broken.
-*/
-
-html #section-18 .overlay {
-    background: none ;
-}
-
-html #section-18 {
-    background: none;
-}
-
-html #section-18 h2 {
-    text-transform: lowercase;
-}
-
-html #section-535 {
-    background: url(https://networkweaver.com/wp-content/uploads/2022/09/Less-Crop-Top.jpg);
-    background-size:cover;
-    background-attachment:fixed;
-}
-
-html #content .parallax-section .section-wrap h2 {
-    color: black;
-}
-
-#content .parallax-section.blog_template .section-wrap h2 {
-    display: none;
-}
-
-html #section-2444 {
-    background: url(https://networkweaver.com/wp-content/uploads/2022/09/Less-Crop-Bottom.jpg);
-    background-size: cover;
-    background-attachment:fixed;
-    color: #333333;
-}
-
-#section-2444 .parallax-title, #section-2444 .fp-resources-copy{
-    display:none;
-}
-
-#content section{
-    margin-top:10px;
+@media (max-width: 750px){
+html #content #section-18.parallax-section .section-wrap h2{
+    font-size: 6vw;
+}    
 }

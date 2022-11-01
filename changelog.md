@@ -43,3 +43,9 @@ updated woo commerce email template
 
 ## [1.0.11] - 2022-07-21
 updated woo commerce email template
+
+## [1.0.12] - 2022-09-04
+made updates to FP styles
+
+## [1.0.13] - 2022-10-31
+one more update to completed order email
